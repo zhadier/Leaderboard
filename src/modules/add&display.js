@@ -9,7 +9,9 @@ const addToLB = (data) => {
     }, 1500);
     return;
   }
-  api.setData(data.user, data.score).then((recieved) => (txt.innerHTML = recieved.result));
+  api.setData(data.user, data.score).then((recieved) => {
+    txt.innerHTML = recieved.result;
+  });
   setTimeout(() => {
     txt.innerHTML = '';
   }, 1700);
@@ -23,7 +25,7 @@ const displayFromLB = () => {
       return;
     }
     const arrangedList = dataList.result.sort((a, b) => b.score - a.score);
-    arrangedList?.forEach((data) => {
+    arrangedList.forEach((data) => {
       const div = document.createElement('div');
       div.className = 'score-wrapper';
       div.innerHTML = `<h3>${data.user}: </h3>
