@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Amiri&family=Didact+Gothic&display=swap');
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: arial, serif;
+}
+
+body {
+  background: url(./images/decided.png) top right;
 }
 
 .wrapper {
@@ -35,7 +41,21 @@ button:active {
 header {
   display: flex;
   margin: 10vh 15% 3% 15%;
-  font-size: 2rem;
+}
+
+header a {
+  font-size: 6rem;
+  text-decoration: none;
+  font-family: 'Amatic SC', cursive;
+  color: #655d8a;
+}
+
+header a:hover,
+h2:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  cursor: default;
 }
 
 #recent-score {
@@ -59,10 +79,34 @@ header {
   font-size: 1.3rem;
 }
 
+.recent-score__heading h2,
+.add-score__heading h2 {
+  font-family: 'Amiri', serif;
+}
+
 .scores {
   border: 2px solid black;
-  max-height: 50vh;
+  height: 32vh;
   overflow: auto;
+}
+
+.scores::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scores::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.scores::-webkit-scrollbar-thumb {
+  background: white;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.scores::-webkit-scrollbar-thumb:hover {
+  background: #655d8a;
+  opacity: 0.5;
 }
 
 .score-wrapper {
@@ -78,7 +122,8 @@ header {
 }
 
 .score-wrapper > h3 {
-  font-size: 1rem;
+  font-size: 1.05rem;
+  font-family: 'Didact Gothic', sans-serif;
 }
 
 .add-score__heading {
@@ -110,9 +155,156 @@ input::placeholder {
 
 form > p {
   align-self: center;
-  color: green;
+  color: #655d8a;
+  font-size: 0.8rem;
 }
 
 #submit-button {
   align-self: flex-end;
+}
+
+.popup-message {
+  background: url(./images/b2.png);
+  position: fixed;
+  padding: 10px;
+  top: 30%;
+  height: 15%;
+  left: 30%;
+  width: 40%;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: space-around;
+  animation: 2s 1 slidein;
+}
+
+@keyframes slidein {
+  from {
+    top: -200px;
+    left: -200px;
+  }
+
+  to {
+    top: 30%;
+    left: 30%;
+  }
+}
+
+.popup-message p {
+  font-size: 1.6rem;
+  font-family: 'Amatic SC', cursive;
+}
+
+#popup-close {
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (max-width: 950px) {
+  body {
+    padding-top: 40px;
+    background: url(./images/m2.png);
+  }
+
+  .scores {
+    max-height: 238px;
+    border: 1px solid #eeecda;
+  }
+
+  .wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  button {
+    font-size: 0.8rem;
+    color: #eeecda;
+    background-color: #583d72;
+    width: 65px;
+  }
+
+  button:hover,
+  button:active {
+    background-color: #91091e;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  header a {
+    color: #ffed99;
+  }
+
+  #recent-score {
+    padding: 0;
+    width: 50%;
+  }
+
+  .add-score__heading {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .recent-score__heading {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .add-score__heading h2,
+  .recent-score__heading h2 {
+    color: #ffc947;
+    font-size: 1.5rem;
+  }
+
+  .score-wrapper {
+    color: white;
+  }
+
+  .score-wrapper h3 {
+    font-size: 0.87rem;
+    white-space: pre-line;
+  }
+
+  .score-wrapper:nth-child(odd) {
+    background-color: #280b45;
+  }
+
+  .score-wrapper:nth-child(even) {
+    background-color: #4d375d;
+  }
+
+  .add-score__input {
+    justify-content: center;
+    align-items: center;
+  }
+
+  input {
+    max-width: none;
+    height: 25px;
+    background-color: thistle;
+  }
+
+  input::placeholder {
+    font-size: 0.75rem;
+  }
+
+  #submit-button {
+    align-self: center;
+  }
+
+  .popup-message p {
+    font-size: 1.2rem;
+    font-family: 'Amatic SC', cursive;
+  }
+
+  #popup-close {
+    width: 30px;
+    height: 30px;
+  }
 }

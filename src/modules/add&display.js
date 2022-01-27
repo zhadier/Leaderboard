@@ -35,4 +35,17 @@ const displayFromLB = () => {
   });
 };
 
-export { addToLB, displayFromLB };
+const popUp = () => {
+  const body = document.querySelector('body');
+  const div = document.createElement('div');
+  div.classList.add('popup-message');
+  div.innerHTML = `<p>Do not follow where the path may lead. Go instead where there is no path and leave a trail</p>
+    <button type="button" id="popup-close"> X </button>`;
+  body.appendChild(div);
+  const close = document.querySelector('#popup-close');
+  close.addEventListener('click', () => {
+    body.removeChild(div);
+  });
+};
+
+export { addToLB, displayFromLB, popUp };
