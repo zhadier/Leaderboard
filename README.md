@@ -1,10 +1,10 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project
+# Leaderboard
 
-> This Webpage is for a leaderboard list app that uses the Leaderboard api to store the scores for all the players.
+> This Webpage is for a leaderboard list app that uses the Leaderboard api to store the highscores for a game.
 
-![screenshot]()
+![screenshot](https://user-images.githubusercontent.com/90556221/151550425-8c947a81-a371-47d5-af87-a597d0941a20.png)
 
 This is one of my first experiences using an api.
 
@@ -14,7 +14,7 @@ This is one of my first experiences using an api.
 
 ## Live Demo
 
-- [Live Demo Link](https://zhadier.github.io//)
+- [GH-page](https://zhadier.github.io/Leaderboard/)
 
 ## Getting Started
 
@@ -24,7 +24,7 @@ This is one of my first experiences using an api.
 
 - Clone this repo locally using git and the following git command
 
-  git clone https://github.com/USERNAME/REPOSITORY
+  git clone git@github.com:zhadier/Leaderboard.git
 
 #### Step 2:
 
