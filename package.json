@@ -8,7 +8,9 @@
     "test": "jest --env=jsdom",
     "watch": "webpack --watch",
     "start": "webpack serve --open",
-    "build": "webpack"
+    "build": "webpack",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -20,7 +22,7 @@
   "bugs": {
     "url": "https://github.com/zhadier/Leaderboard/issues"
   },
-  "homepage": "https://github.com/zhadier/Leaderboard#readme",
+  "homepage": "https://github.com/zhadier/Leaderboard",
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.16.8",
     "css-loader": "^6.5.1",
@@ -33,5 +35,8 @@
   },
   "jest": {
     "testEnvironment": "jsdom"
+  },
+  "dependencies": {
+    "gh-pages": "^3.2.3"
   }
 }
