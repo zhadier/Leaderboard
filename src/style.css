@@ -8,8 +8,28 @@
   font-family: arial, serif;
 }
 
-body {
+.b0 {
   background: url(./images/decided.png) top right;
+}
+
+.b1 {
+  background: url(./images/b6.png);
+}
+
+.b2 {
+  background: url(./images/b7.png) top right;
+}
+
+.b3 {
+  background: url(./images/b8.png) top right;
+}
+
+.b4 {
+  background: url(./images/b11.png) top right;
+}
+
+.b5 {
+  background: url(./images/b9.png) top right;
 }
 
 .wrapper {
@@ -204,7 +224,18 @@ form > p {
 @media screen and (max-width: 950px) {
   body {
     padding-top: 40px;
+  }
+
+  .b0,
+  .b2,
+  .b4 {
     background: url(./images/m2.png);
+  }
+
+  .b1,
+  .b3,
+  .b5 {
+    background: url(./images/m1.png);
   }
 
   .scores {
