@@ -6,7 +6,7 @@
 
 ![screenshot](https://user-images.githubusercontent.com/90556221/151550425-8c947a81-a371-47d5-af87-a597d0941a20.png)
 
-This is one of my first experiences using an api.
+This is my first experience using an api :)
 
 ## Built With
 
@@ -22,32 +22,41 @@ This is one of my first experiences using an api.
 
 #### Step 1:
 
-- Clone this repo locally using git and the following git command
+- Clone this repo locally using git in the command line and the following command
 
-  git clone git@github.com:zhadier/Leaderboard.git
+  git clone https://github.com/zhadier/JavaScript-Capstone
+  
+- Alternatively, you can just download the complete zip file and extract the folder in your directory
 
 #### Step 2:
 
-- Run npm install
-- Run npm start
+- Open the cloned/extracted folder in a code editor of your choice
+- Run npm install (npm and node are prerequisites)(downloads all dependencies)
+- Run npm start (To show the results in live server)
+- Run npm test (To see jest testing results)
 
 ## Authors
 
 👤 **Zeeshan Haider**
 
 - GitHub: [@zhadier](https://github.com/zhadier)
+- LinkedIn: [Zeeshan Haider](https://www.linkedin.com/in/zhadier39/)
+
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome!
+Contributions, issues, and feature requests are welcome and highly encouraged!
+We feel that your input is what helps us grow so you're always Welcome :)
 
 Feel free to check the [issues page](../../issues/).
 
 ## Show your support
 
 Give a ⭐️ if you like this project!
+We would love to hear your thoughts and ideas 🖤
 
 ## Acknowledgments
+Want your name here? It's as easy as forking the project, making awesome new features and finally making a pull request to let me know :)
 
 ## 📝 License
 
