@@ -4,7 +4,7 @@
 
 > This Webpage is for a leaderboard list app that uses the Leaderboard api to store the highscores for a game.
 
-![screenshot](https://user-images.githubusercontent.com/90556221/151550425-8c947a81-a371-47d5-af87-a597d0941a20.png)
+![screenshot](https://user-images.githubusercontent.com/90556221/154583335-209d4c5f-a4d3-460b-9549-d093e203fad3.png)
 
 This is my first experience using an api :)
 
@@ -24,7 +24,7 @@ This is my first experience using an api :)
 
 - Clone this repo locally using git in the command line and the following command
 
-  git clone https://github.com/zhadier/JavaScript-Capstone
+  git clone https://github.com/zhadier/Leaderboard
   
 - Alternatively, you can just download the complete zip file and extract the folder in your directory
 
